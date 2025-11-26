@@ -149,7 +149,7 @@ void MhiSensors::update_status(ACStatus status, int value) {
         // 2025-07-08: Renewed calculation, needs to be confirmed
         // previously it was 0.327f * value - 11.4f, which is not correct
         if (this->indoor_unit_thi_r2_ != NULL) { 
-            this->indoor_unit_thi_r2_ -> publish_state(0.275f * value - 47.0f); 
+            this->indoor_unit_thi_r2_ -> publish_state(0.327f * value - 11.4f); 
         }
         break;
     case erropdata_thi_r2:
